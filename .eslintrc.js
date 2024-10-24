@@ -2,6 +2,7 @@ module.exports = {
     env: {
         es2021: true,
         node: true,
+        jest: true,
     },
     extends: [
         'eslint:recommended',
@@ -50,9 +51,3 @@ module.exports = {
         },
     },
 };
-
-/*
-import add from '../..math/add';
-use this instead:
-import add from '@src/math/add';
-*/

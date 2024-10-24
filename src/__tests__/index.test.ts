@@ -1,9 +1,13 @@
-import { add, subtract } from '../math/basicmaths';
+import { add, subtract } from '@src/math/basicmaths';
 
 describe('Add', () => {
   it('add two numbers', () => {
     const result = add(1, 2);
     expect(result).toBe(3);
+  });
+  it('should add two bigger numbers', () => {
+    const result = add(4, 5);
+    expect(result).toBe(9);
   });
 
   it('it should throw an exception if other than two numbers is passed', () => {
